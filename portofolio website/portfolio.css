@@ -3,7 +3,7 @@ body{
 
        background: linear-gradient(to bottom, black, rgb(59, 59, 59));
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 html{
     scroll-behavior: smooth;
@@ -13,13 +13,17 @@ h1{
     text-align: center;
 }
 h2{
-    color: white;
+    color: white; 
     text-align: center;
+    margin-top: 10%;
+    height: 100px;
     
 }
 h3{
     color: white;
     text-align: center;
+    
+
 }
 p{
     color: white;
@@ -28,22 +32,29 @@ p{
     font-size: 42px;
     
 }
-a#scroll-btn{
-    width: 0;
-    height: 0;
-    margin: auto;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 100px solid white;
+a.scroll-btn{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
     position: absolute;
     left: 50%;
     right: 50%;
     bottom: 6%;
-    
+    margin: auto;
 }
-
-@media screen and (max-width:500px) {
-    a#scroll-btn{
-        font-size: 12px;
-    }
+a.scroll-btn-2{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    left: 80%;
+    right: 20%;
+    bottom: 90vh;
+    margin: auto;
 }
