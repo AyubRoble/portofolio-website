@@ -1,13 +1,23 @@
-
-
 body{
 
 
-       background: linear-gradient(to bottom, black, rgb(37, 36, 36));
+       background: linear-gradient(to bottom, black, rgb(59, 59, 59));
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+html{
+    scroll-behavior: smooth;
+}
 h1{
+    color: white;
+    text-align: center;
+}
+h2{
+    color: white;
+    text-align: center;
+    
+}
+h3{
     color: white;
     text-align: center;
 }
@@ -17,4 +27,23 @@ p{
     font-family: "Lucida Handwriting";
     font-size: 42px;
     
+}
+a#scroll-btn{
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid white;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 6%;
+    
+}
+
+@media screen and (max-width:500px) {
+    a#scroll-btn{
+        font-size: 12px;
+    }
 }
