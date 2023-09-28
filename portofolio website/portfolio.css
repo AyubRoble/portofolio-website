@@ -2,6 +2,8 @@ body{
     background: linear-gradient(to bottom, black, rgb(59, 59, 59));
     background-repeat: no-repeat;
     background-attachment: scroll;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -19,6 +21,113 @@ p{
     color: white;
     text-align: left;
 
+}
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    background: #40d3dc;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+    height: 500px;
+
+}
+
+/*css manual nav*/
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #5846b6;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #5846b6;
+}
+
+#radio-1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio-2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio-3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio-4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/* css automatic*/
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 450px;
+}
+
+.navigation-auto div{
+    border: 2px solid #5846b6;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+
+}
+
+.navigation-auto div:not(:last-child){
+margin-right: 40px;
+
+}
+
+#radio-1 :checked ~ .navigation-auto .auto-btn-1{
+    background: #40d3dc;
+}
+
+#radio-2 :checked ~ .navigation-auto .auto-btn-2{
+    background: #40d3dc;
+}
+
+#radio-3 :checked ~ .navigation-auto .auto-btn-3{
+    background: #40d3dc;
+}
+
+#radio-4 :checked ~ .navigation-auto .auto-btn-4{
+    background: #40d3dc;
 }
 
 h2{
@@ -73,10 +182,10 @@ a.scroll-btn{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     position: absolute;
-    left: 44%;
-    right: 50%;
+    left: 48%;
+    right: 48%;
     bottom: 0%;
 
     margin: auto;
