@@ -3,7 +3,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: scroll;
     margin: 0;
-    padding: 0;
+    padding-top: 10px;
 }
 
 html {
@@ -23,16 +23,24 @@ p{
 
 }
 .slider{
-    width: 800px;
+    width: 400px;
     height: 500px;
     border-radius: 10px;
     background: #40d3dc;
+    overflow: hidden;
+    position: absolute;
+    right: 50%;
+    left: 60%;
+    top: 130vh;
+    
 }
 
 .slides{
     width: 500%;
     height: 500px;
     display: flex;
+    
+
 }
 
 .slides input{
@@ -45,7 +53,7 @@ p{
 }
 
 .slide img{
-    width: 800px;
+    width: 400px;
     height: 500px;
 
 }
@@ -54,7 +62,7 @@ p{
 
 .navigation-manual{
     position: absolute;
-    width: 800px;
+    width: 400px;
     margin-top: 450px;
     display: flex;
     justify-content: center;
@@ -96,7 +104,7 @@ p{
 .navigation-auto{
     position: absolute;
     display: flex;
-    width: 800px;
+    width: 400px;
     justify-content: center;
     margin-top: 450px;
 }
@@ -115,7 +123,7 @@ margin-right: 40px;
 }
 
 #radio-1 :checked ~ .navigation-auto .auto-btn-1{
-    background: #40d3dc;
+    background: #c01579;
 }
 
 #radio-2 :checked ~ .navigation-auto .auto-btn-2{
@@ -222,8 +230,8 @@ a.scroll-btn-2{
     justify-content: center;
 
     position: absolute;
-    left: 44%;
-    right: 50%;
+    left: 48%;
+    right: 48%;
     bottom: -104%;
 
     margin: auto;
@@ -249,8 +257,8 @@ a.scroll-btn-3{
     justify-content: center;
 
     position: absolute;
-    left: 44%;
-    right: 50%;
+    left: 48%;
+    right: 48%;
     bottom: -204%;
 
     margin: auto;
@@ -276,9 +284,9 @@ a.scroll-btn-4{
     justify-content: center;
 
     position: absolute;
-    left: 44%;
-    right: 50%;
-    bottom: -363vh;
+    left: 48%;
+    right: 48%;
+    bottom: -304vh;
 
     margin: auto;
     padding: 50px;
