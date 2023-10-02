@@ -22,6 +22,7 @@ p{
     text-align: left;
 
 }
+/* slide begin 1 */
 .slider{
     width: 400px;
     height: 500px;
@@ -73,7 +74,7 @@ p{
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .manual-btn:not(:last-child){
@@ -113,7 +114,7 @@ p{
     border: 2px solid #5846b6;
     padding: 5px;
     border-radius: 10px;
-    transition: 1s;
+    transition: 0.5s;
 
 }
 
@@ -137,6 +138,7 @@ margin-right: 40px;
 #radio-4 :checked ~ .navigation-auto .auto-btn-4{
     background: #40d3dc;
 }
+/*slide einde 1*/
 
 h2{
     color: white; 
@@ -164,6 +166,120 @@ h4{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 50px;
 }
+
+/* slide begin 2*/
+.slider-2{
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    background: #40d3dc;
+    overflow: hidden;
+    position: absolute;
+    right: 50%;
+    left: 60%;
+}
+
+.slides-2{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides-2 input{
+    display: none;
+}
+
+.slide-2{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide-2 img{
+    width: 400px;
+    height: 500px;
+
+}
+
+/*css manual nav*/
+
+.navigation-manual-2{
+    position: absolute;
+    width: 400px;
+    margin-top: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn-2{
+    border: 2px solid #5846b6;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn-2:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn-2:hover{
+    background: #5846b6;
+}
+
+#radio-5:checked ~ .second{
+    margin-left: 0;
+}
+
+#radio-6:checked ~ .second{
+    margin-left: -20%;
+}
+
+#radio-7:checked ~ .second{
+    margin-left: -40%;
+}
+
+#radio-8:checked ~ .second{
+    margin-left: -60%;
+}
+
+/* css automatic*/
+.navigation-auto-2{
+    position: absolute;
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    margin-top: 450px;
+}
+
+.navigation-auto-2 div{
+    border: 2px solid #5846b6;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+.navigation-auto-2 div:not(:last-child){
+margin-right: 40px;
+
+}
+
+#radio-5 :checked ~ .navigation-auto-2 .auto-btn-5{
+    background: #c01579;
+}
+
+#radio-6 :checked ~ .navigation-auto-2 .auto-btn-6{
+    background: #40d3dc;
+}
+
+#radio-7 :checked ~ .navigation-auto-2 .auto-btn-7{
+    background: #40d3dc;
+}
+
+#radio-8 :checked ~ .navigation-auto-2 .auto-btn-8{
+    background: #40d3dc;
+}
+/*slide einde 2*/
 
 h5{
     color: white; 
