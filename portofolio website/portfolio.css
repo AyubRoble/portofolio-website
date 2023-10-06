@@ -2,27 +2,29 @@ body{
     background: linear-gradient(to bottom, black, rgb(59, 59, 59));
     background-repeat: no-repeat;
     background-attachment: scroll;
-    margin: 0;
+    margin: 15px;
     padding-top: 10px;
-
+    font-family: 'Inter', sans-serif; 
 }
 
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-
-}
-::-webkit-scrollbar{
-    width: 15px;
-}
-::-webkit-scrollbar-track{
-    background: white;
 }
 
-::-webkit-scrollbar-thumb{
-     background: red;
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb{
+     background: blue;
      border-radius: 6px;
 }
+
 #section-1{
     height:0px;
     scroll-snap-align: start;
@@ -34,28 +36,24 @@ html {
     height:0px;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-;
 }
 
 #section-3{
     height:0px;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-
 }
 
 #section-4{
     height:0px;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-
 }
 
 #section-5{
     height:0px;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-
 }
 
 h1{
@@ -70,6 +68,11 @@ p{
     text-align: left;
 
 }
+
+#OverMij{
+    font-size: x-large
+    
+}
 /* slide begin 1 */
 .slider{
     width: 400px;
@@ -81,15 +84,12 @@ p{
     right: 50%;
     left: 60%;
     top: 130vh;
-    
 }
 
 .slides{
     width: 500%;
     height: 500px;
     display: flex;
-    
-
 }
 
 .slides input{
@@ -104,7 +104,6 @@ p{
 .slide img{
     width: 400px;
     height: 500px;
-
 }
 
 /*css manual nav*/
@@ -163,12 +162,10 @@ p{
     padding: 5px;
     border-radius: 10px;
     transition: 0.5s;
-
 }
 
 .navigation-auto div:not(:last-child){
-margin-right: 40px;
-
+    margin-right: 40px;
 }
 
 #radio-1:checked ~ .navigation-auto .auto-btn-1{
@@ -222,7 +219,6 @@ h5{
     height: 100px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 50px;
-    
 }
 
 h6{
@@ -233,8 +229,6 @@ h6{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 50px;
 }
-
-
 
 a.scroll-btn{
     display: flex;
@@ -343,4 +337,3 @@ a.scroll-btn-4{
 
     height: 0;
 }
-
