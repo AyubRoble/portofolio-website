@@ -66,12 +66,16 @@ h1{
 p{
     color: white;
     text-align: left;
-
 }
 
 #OverMij{
     font-size: x-large
-    
+}
+
+li{
+    color: white;
+    text-align: left;
+    font-size: 14px;
 }
 /* slide begin 1 */
 .slider{
