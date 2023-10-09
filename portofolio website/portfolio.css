@@ -39,11 +39,16 @@ body::-webkit-scrollbar-thumb{
 }
 
 #section-3{
+    display: flex;
+    justify-content: space-between;
     height:0px;
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
 
+.flex-stage{
+
+}
 #section-4{
     height:0px;
     scroll-snap-align: start;
@@ -77,6 +82,8 @@ li{
     text-align: left;
     font-size: 14px;
 }
+
+
 /* slide begin 1 */
 .slider{
     width: 400px;
