@@ -38,16 +38,29 @@ body::-webkit-scrollbar-thumb{
     scroll-snap-stop: always;
 }
 
+
 #section-3{
-    display: flex;
-    justify-content: space-between;
+   
     height:0px;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+   
 }
 
 .flex-stage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
+}
+.flex-collum{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-collum-1{
+    max-width: 60ch;
 }
 #section-4{
     height:0px;
@@ -74,7 +87,7 @@ p{
 }
 
 #OverMij{
-    font-size: x-large
+    max-width: 40ch;
 }
 
 li{
