@@ -373,7 +373,7 @@ a.scroll-btn-4{
 .header{
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     padding: 20px 100px;
     background: grey;
@@ -389,12 +389,18 @@ a.scroll-btn-4{
     text-decoration: none;
 }
 
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+}
+
 .navbar a {
     position: relative;
     font-size: 18px;
     color: white;
     text-decoration: none;
     margin-left: 40px;
+
 }
 
 .navbar a::before{
