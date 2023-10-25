@@ -148,6 +148,27 @@ include_once 'log.php';
     <a class="buttons" href="https://www.linkedin.com/in/ayub-roble-b9a2b3226/" target="_blank" rel="noopener noreferrer"><img src="linkedin.png" style="width: 10%; height: auto;">
       
     </a>
+    <form action="insert.php" method="post">
+             
+             <p>
+                            <label for="firstName">First Name:</label>
+                            <input type="text" name="first_name" id="firstName">
+                         </p>
+              
+                          
+             <p>
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" name="last_name" id="lastName">
+                         </p>
+              
+                          
+             <p>
+                            <label for="emailAddress">Email Address:</label>
+                            <input type="text" name="email" id="emailAddress">
+                         </p>
+              
+                         <input type="submit" value="Submit">
+</form> 
 </Section>
 </body>
 </html>

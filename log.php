@@ -17,5 +17,5 @@ $sql = "INSERT INTO visitor_logs (page_url, referrer_url, user_ip_address, user_
 $stmt = $db->prepare($sql); 
 $stmt->bind_param("ssss", $currentURL, $referrer_url, $user_ip_address, $user_agent); 
 $insert = $stmt->execute(); 
- 
+
 ?>
